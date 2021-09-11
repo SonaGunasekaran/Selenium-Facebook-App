@@ -19,8 +19,8 @@ namespace AutomateFacebookApp
         [Test]
         public void CheckInputFields()
         {
-            LoginPage.FBLoginPage.FacebookTitle();
-            LoginPage.FBLoginPage.CheckEmailAndPassword();
+            //LoginPage.FBLoginPage.FacebookTitle();
+            DoAction.DoActions.CheckEmailAndPassword();
         }
 
     }
