@@ -2,13 +2,13 @@
  * Project:Selenium WebDriver
  * Author:Sona G
  * Date :08/09/2021
- */
+*/
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
 using System;
+using System.Threading;
 
 namespace AutomateFacebookApp.Base
 {
@@ -25,12 +25,13 @@ namespace AutomateFacebookApp.Base
             driver.Manage().Window.Maximize();
             //Get the facebook URL
             driver.Url = "https://www.facebook.com/";
-            driver.Manage().Timeouts().ImplicitWait=TimeSpan.FromSeconds(10);
-            //Explicit wait
+            //Implicit Wait
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            //Explicit Wait
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
             wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
+            Thread.Sleep(30);
         }
-
         [TearDown]
         public void TearDown()
         {

@@ -5,29 +5,27 @@
  */
 using NUnit.Framework;
 using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
+using System;
 
 namespace AutomateFacebookApp.LoginPage
 {
-    //Inherit from base class
-    public class FBLoginPage : Base.Baseclass
+    public class FBLoginPage
     {
-        public static void FacebookTitle()
-        { 
-            string title1 = "Facebook - உள்நுழையவும் அல்லது பதிவுசெய்யவும்";
-            //Get Facebook title
-            string ftitle = driver.Title;
-            //check whether the title equal or not
-            Assert.Pass(title1, ftitle);
-        }
-
-        public static void CheckEmailAndPassword()
+        public FBLoginPage(IWebDriver driver)
         {
-            //Check email by name 
-            IWebElement email = driver.FindElement(By.Name("email"));
-            email.SendKeys("sona16061999@gmail.com");
-            //check password by id
-            IWebElement passwrd = driver.FindElement(By.Id("pass"));
-            passwrd.SendKeys("12345678");
+            PageFactory.InitElements(driver, this);
         }
+        [FindsBy(How = How.Name, Using = "email")]
+        [CacheLookup]
+        public IWebElement email;
+
+        [FindsBy(How = How.Name, Using = "pass")]
+        [CacheLookup]
+        public IWebElement password;
+
+        [FindsBy(How = How.Name, Using = "login")]
+        [CacheLookup]
+        public IWebElement loginbtn;
     }
 }
