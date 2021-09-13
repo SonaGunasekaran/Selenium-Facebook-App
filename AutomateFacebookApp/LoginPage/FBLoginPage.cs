@@ -16,6 +16,7 @@ namespace AutomateFacebookApp.LoginPage
         {
             PageFactory.InitElements(driver, this);
         }
+
         [FindsBy(How = How.Name, Using = "email")]
         [CacheLookup]
         public IWebElement email;

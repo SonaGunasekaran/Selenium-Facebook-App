@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using AutomateFacebookApp.LoginPage;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -19,15 +20,17 @@ namespace AutomateFacebookApp.DoAction
 
         public static void CheckEmailAndPassword()
         {
+            FBLoginPage login = new FBLoginPage(driver);
+
             //Check email by name 
-            IWebElement email = driver.FindElement(By.Name("email"));
-            email.SendKeys("santydx5@gmail.com");
+            login.email.SendKeys("santydx5@gmail.com");
+
             //check password by id
-            IWebElement passwrd = driver.FindElement(By.Id("pass"));
-            passwrd.SendKeys("Santhosh23");
-            IWebElement login = driver.FindElement(By.Name("login"));
-            login.Click();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            login.password.SendKeys("Santhosh23");
+
+            //check login by loginbutton
+            login.loginbtn.Click();
+            System.Threading.Thread.Sleep(4000);
         }
     }
 }
