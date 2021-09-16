@@ -1,33 +1,44 @@
-﻿using OpenQA.Selenium;
+﻿/*
+ * Project:Selenium WebDriver
+ * Author:Sona G
+ * Date :08/09/2021
+ */
+using OpenQA.Selenium;
+using SeleniumExtras.PageObjects;
 
 namespace AutomateFacebookApp.CreatePost
 {
-    public class FBCreatePostPage :Base.Baseclass
+    public class FBCreatePostPage
     {
-        public static void FbCreatePost()
+        public FBCreatePostPage(IWebDriver driver)
         {
-            //Find Email using name and enter values
-            driver.FindElement(By.Name("email")).SendKeys("santydx5@gmail.com");
-
-            //Find password using name and enter values
-            driver.FindElement(By.Name("pass")).SendKeys("Santhosh23");
-
-            //Find login button using name 
-            driver.FindElement(By.Name("login")).Click();
-            System.Threading.Thread.Sleep(4000);
-
-            //Click the home icon using Xpath
-            driver.FindElement(By.XPath("/html/body/div[1]/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div")).Click(); 
-            System.Threading.Thread.Sleep(4000);
-
-            //Click the create post using Xpath
-            driver.FindElement(By.XPath("/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div")).Click();
-            System.Threading.Thread.Sleep(4000);
-
-            driver.FindElement(By.XPath("//*[@class='_1mf _1mj']")).SendKeys("Something");
-            System.Threading.Thread.Sleep(4000);
-
+            PageFactory.InitElements(driver, this);
         }
 
+        [FindsBy(How = How.Name, Using = "email")]
+        [CacheLookup]
+        public IWebElement email;
+
+        [FindsBy(How = How.Name, Using = "pass")]
+        [CacheLookup]
+        public IWebElement password;
+
+        [FindsBy(How = How.Name, Using = "login")]
+        [CacheLookup]
+        public IWebElement loginbtn;
+
+        [FindsBy(How = How.XPath, Using = "/html/body/div[1]/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div")]
+        [CacheLookup]
+        public IWebElement homeIcon;
+
+        [FindsBy(How = How.XPath, Using = "/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div")]
+        [CacheLookup]
+        public IWebElement createPost;
+
+        [FindsBy(How = How.XPath, Using = "//*[@class='_1mf _1mj']")]
+        [CacheLookup]
+        public IWebElement text;
+
     }
+
 }

@@ -3,9 +3,7 @@
  * Author:Sona G
  * Date :08/09/2021
  */
-
 using NUnit.Framework;
-
 
 namespace AutomateFacebookApp
 {
@@ -14,7 +12,7 @@ namespace AutomateFacebookApp
         [Test]
         public void CheckInputFieldsForSignupPage()
         {
-            SignupPage.FBSignupPage.FbSignupPage();
+            SignupAction.SignupActionclass.SignupPage();
         }
         [Test]
         public void CheckInputFields()
@@ -25,7 +23,7 @@ namespace AutomateFacebookApp
         [Test]
         public void CheckInputFieldsForPostPage()
         {
-            CreatePost.FBCreatePostPage.FbCreatePost();
+           PostAction.CreatePostAction.CheckEmailAndPassword();
         }
 
     }

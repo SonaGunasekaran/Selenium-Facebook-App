@@ -12,7 +12,6 @@ using System.Threading;
 
 namespace AutomateFacebookApp.Base
 {
-    //
     public class Baseclass
     {
         public static IWebDriver driver;

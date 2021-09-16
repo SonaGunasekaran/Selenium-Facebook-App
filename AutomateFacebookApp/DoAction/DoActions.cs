@@ -1,9 +1,10 @@
-﻿using AutomateFacebookApp.LoginPage;
+﻿/*
+ * Project:Selenium WebDriver
+ * Author:Sona G
+ * Date :08/09/2021
+ */
+using AutomateFacebookApp.LoginPage;
 using NUnit.Framework;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AutomateFacebookApp.DoAction
 {
@@ -22,13 +23,13 @@ namespace AutomateFacebookApp.DoAction
         {
             FBLoginPage login = new FBLoginPage(driver);
 
-            //Check email by name 
+            //Enter the email
             login.email.SendKeys("santydx5@gmail.com");
 
-            //check password by id
+            //enter the password
             login.password.SendKeys("Santhosh23");
 
-            //check login by loginbutton
+            //click on loginbutton
             login.loginbtn.Click();
             System.Threading.Thread.Sleep(4000);
         }
