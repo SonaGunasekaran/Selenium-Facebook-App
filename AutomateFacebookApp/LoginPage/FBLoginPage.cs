@@ -3,10 +3,8 @@
  * Author:Sona G
  * Date :08/09/2021
  */
-using NUnit.Framework;
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
-using System;
 
 namespace AutomateFacebookApp.LoginPage
 {
