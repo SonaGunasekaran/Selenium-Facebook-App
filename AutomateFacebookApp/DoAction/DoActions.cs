@@ -5,6 +5,7 @@
  */
 using AutomateFacebookApp.LoginPage;
 using NUnit.Framework;
+using System;
 
 namespace AutomateFacebookApp.DoAction
 {
@@ -18,20 +19,27 @@ namespace AutomateFacebookApp.DoAction
             //check whether the title equal or not
             Assert.Pass(title1, ftitle);
         }
-
         public static void CheckEmailAndPassword()
         {
-            FBLoginPage login = new FBLoginPage(driver);
+            try
+            {
+                FBLoginPage login = new FBLoginPage(driver);
+                //Enter the email
+                login.email.SendKeys("santydx5@gmail.com");
+                logger.Info("Field not found");
 
-            //Enter the email
-            login.email.SendKeys("santydx5@gmail.com");
+                //enter the password
+                login.password.SendKeys("Santhosh23");
+                logger.Info("Field not found");
 
-            //enter the password
-            login.password.SendKeys("Santhosh23");
-
-            //click on loginbutton
-            login.loginbtn.Click();
-            System.Threading.Thread.Sleep(4000);
+                //click on loginbutton
+                login.loginbtn.Click();
+                System.Threading.Thread.Sleep(4000);
+            }
+            catch(Exception ex)
+            {
+                logger.Error(ex.Message);
+            }
         }
     }
 }

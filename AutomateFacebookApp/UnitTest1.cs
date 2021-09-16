@@ -4,6 +4,7 @@
  * Date :08/09/2021
  */
 using NUnit.Framework;
+using OpenQA.Selenium;
 
 namespace AutomateFacebookApp
 {
@@ -17,13 +18,14 @@ namespace AutomateFacebookApp
         [Test]
         public void CheckInputFields()
         {
-            //DoAction.DoActions.FacebookTitle();
+            DoAction.DoActions.FacebookTitle();
             DoAction.DoActions.CheckEmailAndPassword();
+            ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile("Test.png", ScreenshotImageFormat.Png);
         }
         [Test]
         public void CheckInputFieldsForPostPage()
         {
-           PostAction.CreatePostAction.CheckEmailAndPassword();
+            PostAction.CreatePostAction.CheckEmailAndPassword();
         }
 
     }

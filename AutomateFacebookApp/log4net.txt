@@ -1,0 +1,173 @@
+2021-09-16 19:59:29,599 INFO Launching browser
+2021-09-16 19:59:33,519 INFO Exit
+2021-09-16 19:59:38,288 INFO Launching browser
+2021-09-16 19:59:42,078 INFO Exit
+2021-09-16 19:59:48,617 INFO Launching browser
+2021-09-16 19:59:52,357 INFO Exit
+2021-09-16 20:18:09,285 INFO Launching browser
+2021-09-16 20:18:13,970 INFO Exit
+2021-09-16 20:18:14,138 INFO Field not found
+2021-09-16 20:18:14,288 INFO Field not found
+2021-09-16 20:18:18,922 INFO Launching browser
+2021-09-16 20:18:22,744 INFO Exit
+2021-09-16 20:18:22,884 INFO Field not found
+2021-09-16 20:18:23,021 INFO Field not found
+2021-09-16 20:18:43,964 INFO Field not found
+2021-09-16 20:18:44,489 INFO Launching browser
+2021-09-16 20:18:48,439 INFO Exit
+2021-09-16 20:18:48,444 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:08:18,620 INFO Launching browser
+2021-09-16 21:08:21,973 INFO Exit
+2021-09-16 21:08:22,106 INFO Field not found
+2021-09-16 21:08:22,220 INFO Field not found
+2021-09-16 21:08:26,667 INFO Launching browser
+2021-09-16 21:08:29,961 INFO Exit
+2021-09-16 21:08:30,067 INFO Field not found
+2021-09-16 21:08:30,171 INFO Field not found
+2021-09-16 21:08:50,971 INFO Field not found
+2021-09-16 21:08:51,688 INFO Launching browser
+2021-09-16 21:08:55,112 INFO Exit
+2021-09-16 21:08:55,116 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:12:47,389 INFO Launching browser
+2021-09-16 21:12:50,872 INFO Exit
+2021-09-16 21:12:51,019 INFO Field not found
+2021-09-16 21:12:51,138 INFO Field not found
+2021-09-16 21:12:55,614 INFO Launching browser
+2021-09-16 21:12:58,913 INFO Exit
+2021-09-16 21:12:59,025 INFO Field not found
+2021-09-16 21:12:59,145 INFO Field not found
+2021-09-16 21:13:08,352 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 21:13:10,022 INFO Launching browser
+2021-09-16 21:13:13,277 INFO Exit
+2021-09-16 21:13:13,282 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:17:32,711 INFO Launching browser
+2021-09-16 21:17:36,059 INFO Exit
+2021-09-16 21:17:36,193 INFO Field not found
+2021-09-16 21:17:36,298 INFO Field not found
+2021-09-16 21:17:40,715 INFO Launching browser
+2021-09-16 21:17:44,383 INFO Exit
+2021-09-16 21:17:44,494 INFO Field not found
+2021-09-16 21:17:44,614 INFO Field not found
+2021-09-16 21:17:52,740 ERROR Could not find element by: By.CssSelector: button[onclick='jsConfirm()']
+2021-09-16 21:17:53,172 INFO Launching browser
+2021-09-16 21:17:56,337 INFO Exit
+2021-09-16 21:17:56,345 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:19:19,778 INFO Launching browser
+2021-09-16 21:19:23,193 INFO Exit
+2021-09-16 21:19:23,334 INFO Field not found
+2021-09-16 21:19:23,451 INFO Field not found
+2021-09-16 21:19:27,870 INFO Launching browser
+2021-09-16 21:19:31,069 INFO Exit
+2021-09-16 21:19:31,173 INFO Field not found
+2021-09-16 21:19:31,283 INFO Field not found
+2021-09-16 21:19:56,042 INFO Field not found
+2021-09-16 21:19:56,657 INFO Launching browser
+2021-09-16 21:19:59,874 INFO Exit
+2021-09-16 21:19:59,879 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:23:09,905 INFO Launching browser
+2021-09-16 21:23:13,411 INFO Exit
+2021-09-16 21:23:13,553 INFO Field not found
+2021-09-16 21:23:13,665 INFO Field not found
+2021-09-16 21:23:18,105 INFO Launching browser
+2021-09-16 21:23:21,497 INFO Exit
+2021-09-16 21:23:21,613 INFO Field not found
+2021-09-16 21:23:21,722 INFO Field not found
+2021-09-16 21:23:46,596 INFO Field not found
+2021-09-16 21:23:47,265 INFO Launching browser
+2021-09-16 21:23:50,480 INFO Exit
+2021-09-16 21:23:50,486 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:24:20,959 INFO Launching browser
+2021-09-16 21:24:24,287 INFO Exit
+2021-09-16 21:24:24,425 INFO Field not found
+2021-09-16 21:24:24,543 INFO Field not found
+2021-09-16 21:24:28,992 INFO Launching browser
+2021-09-16 21:24:32,279 INFO Exit
+2021-09-16 21:24:32,393 INFO Field not found
+2021-09-16 21:24:32,501 INFO Field not found
+2021-09-16 21:24:57,324 INFO Field not found
+2021-09-16 21:25:05,940 INFO Launching browser
+2021-09-16 21:25:09,223 INFO Exit
+2021-09-16 21:25:09,226 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:28:33,309 INFO Launching browser
+2021-09-16 21:28:36,754 INFO Exit
+2021-09-16 21:28:36,890 INFO Field not found
+2021-09-16 21:28:37,006 INFO Field not found
+2021-09-16 21:28:41,426 INFO Launching browser
+2021-09-16 21:28:44,694 INFO Exit
+2021-09-16 21:28:44,802 INFO Field not found
+2021-09-16 21:28:44,911 INFO Field not found
+2021-09-16 21:29:09,683 INFO Field not found
+2021-09-16 21:29:18,309 INFO Launching browser
+2021-09-16 21:29:21,539 INFO Exit
+2021-09-16 21:29:21,542 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
+2021-09-16 21:38:14,962 INFO Launching browser
+2021-09-16 21:38:41,043 INFO Launching browser
+2021-09-16 21:38:44,405 INFO Exit
+2021-09-16 21:38:44,551 INFO Field not found
+2021-09-16 21:38:44,679 INFO Field not found
+2021-09-16 21:39:05,567 INFO Field not found
+2021-09-16 21:39:14,912 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 21:39:50,754 INFO Launching browser
+2021-09-16 21:39:54,393 INFO Exit
+2021-09-16 21:39:54,539 INFO Field not found
+2021-09-16 21:39:54,658 INFO Field not found
+2021-09-16 21:40:15,464 INFO Field not found
+2021-09-16 21:40:24,799 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 21:41:47,489 INFO Launching browser
+2021-09-16 21:41:50,922 INFO Exit
+2021-09-16 21:41:51,071 INFO Field not found
+2021-09-16 21:41:51,185 INFO Field not found
+2021-09-16 21:42:12,085 INFO Field not found
+2021-09-16 21:44:45,922 INFO Launching browser
+2021-09-16 21:44:49,506 INFO Exit
+2021-09-16 21:44:49,660 INFO Field not found
+2021-09-16 21:44:49,784 INFO Field not found
+2021-09-16 21:45:10,782 INFO Field not found
+2021-09-16 21:45:19,273 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 21:46:03,725 INFO Launching browser
+2021-09-16 21:46:07,358 INFO Exit
+2021-09-16 21:46:07,505 INFO Field not found
+2021-09-16 21:46:07,623 INFO Field not found
+2021-09-16 21:46:28,508 INFO Field not found
+2021-09-16 21:46:44,913 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 21:48:07,628 INFO Launching browser
+2021-09-16 21:48:11,287 INFO Exit
+2021-09-16 21:48:11,429 INFO Field not found
+2021-09-16 21:48:11,552 INFO Field not found
+2021-09-16 21:48:32,401 INFO Field not found
+2021-09-16 21:48:48,809 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 21:49:30,824 INFO Launching browser
+2021-09-16 21:49:34,588 INFO Exit
+2021-09-16 21:49:34,727 INFO Field not found
+2021-09-16 21:49:34,842 INFO Field not found
+2021-09-16 21:49:55,723 INFO Field not found
+2021-09-16 21:50:12,098 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 21:55:00,799 INFO Launching browser
+2021-09-16 21:55:04,841 INFO Exit
+2021-09-16 21:55:05,034 INFO Field not found
+2021-09-16 21:55:05,151 INFO Field not found
+2021-09-16 21:55:26,091 INFO Field not found
+2021-09-16 21:55:42,492 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 22:10:32,497 INFO Launching browser
+2021-09-16 22:10:36,350 INFO Exit
+2021-09-16 22:10:36,485 INFO Field not found
+2021-09-16 22:10:36,614 INFO Field not found
+2021-09-16 22:13:26,427 INFO Launching browser
+2021-09-16 22:13:30,019 INFO Exit
+2021-09-16 22:13:30,172 INFO Field not found
+2021-09-16 22:13:30,304 INFO Field not found
+2021-09-16 22:18:20,888 INFO Launching browser
+2021-09-16 22:18:24,320 INFO Exit
+2021-09-16 22:18:24,460 INFO Field not found
+2021-09-16 22:18:24,581 INFO Field not found
+2021-09-16 22:23:56,892 INFO Launching browser
+2021-09-16 22:24:00,644 INFO Exit
+2021-09-16 22:24:00,998 INFO Launching browser
+2021-09-16 22:24:04,424 INFO Exit
+2021-09-16 22:24:04,574 INFO Field not found
+2021-09-16 22:24:04,693 INFO Field not found
+2021-09-16 22:24:25,484 INFO Field not found
+2021-09-16 22:24:41,908 ERROR Exception has been thrown by the target of an invocation.
+2021-09-16 22:24:42,330 INFO Launching browser
+2021-09-16 22:24:45,660 INFO Exit
+2021-09-16 22:24:45,696 ERROR Type of member 'SelectElement' is not IWebElement or IList<IWebElement>
