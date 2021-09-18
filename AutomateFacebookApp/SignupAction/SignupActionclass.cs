@@ -3,7 +3,8 @@
  * Author:Sona G
  * Date :08/09/2021
  */
-using AutomateFacebookApp.SignupPage;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace AutomateFacebookApp.SignupAction
@@ -14,54 +15,55 @@ namespace AutomateFacebookApp.SignupAction
         {
             try
             {
-                FBSignupPage signup = new FBSignupPage(driver);
-
-                signup.createacc.Click();
-                System.Threading.Thread.Sleep(1000);
+                
+                IWebElement createacc = driver.FindElement(By.XPath("//*[@class='_6ltg'][2]"));
+                createacc.Click();
+                System.Threading.Thread.Sleep(2000);
 
                 //Find firstname using name  and enter values
-                signup.firstname.SendKeys("Santy");
-                logger.Info("Field not found");
+                driver.FindElement(By.Name("firstname")).SendKeys("Santhosh");
+                logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find lastname using name  and enter values
-                signup.lastname.SendKeys("M");
-                logger.Info("Field not found");
+                driver.FindElement(By.Name("lastname")).SendKeys("M");
+                logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find Email using name  and enter values
-                signup.email.SendKeys("sandx5@gmail.com");
-                logger.Info("Field not found");
+                driver.FindElement(By.Name("reg_email__")).SendKeys("santhosh23@gmail.com");
+                logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find password using name  and enter values
-                signup.password.SendKeys("santhosh23");
+                driver.FindElement(By.Name("reg_passwd__")).SendKeys("Sjfk4566");
                 logger.Info("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find birthday date using name and enter values
-                signup.bDay.SelectByValue("23");
-                logger.Info("Field not found");
+                SelectElement bDay = new SelectElement(driver.FindElement(By.Name("birthday_day")));
+                bDay.SelectByText("23");
+                logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find birthday month using Id and enter values
-
-                signup.bMonth.SelectByValue("7");
+                SelectElement bMonth = new SelectElement(driver.FindElement(By.Id("month")));
+                bMonth.SelectByValue("7");
                 logger.Info("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find birthday year using Id and enter values
-
-                signup.bYear.SelectByValue("2000");
+                SelectElement bYear = new SelectElement(driver.FindElement(By.Id("year")));
+                bYear.SelectByValue("2000");
                 logger.Info("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
-                //Find gender using Xpath 
-                signup.gender.Click();
+                //Find gender using Xpath
+                driver.FindElement(By.XPath("//*[@class='mtm _5wa2 _5dbb'][1]")).Click();
                 System.Threading.Thread.Sleep(1000);
 
                 //Find register button using name 
-                signup.loginbtn.Click();
+                driver.FindElement(By.Name("websubmit")).Click();
                 System.Threading.Thread.Sleep(1000);
             }
             catch(Exception ex)

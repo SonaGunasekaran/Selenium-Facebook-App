@@ -17,8 +17,7 @@ namespace AutomateFacebookApp.Base
 {
     public class Baseclass
     {
-       // private static readonly ILog log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
-        public static ILog logger = LogManager.GetLogger(typeof(DoActions));
+        public static ILog logger = LogManager.GetLogger(typeof(FBApplication));
 
         public static IWebDriver driver;
         [SetUp]
