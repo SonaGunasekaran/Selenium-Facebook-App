@@ -10,23 +10,22 @@ namespace AutomateFacebookApp
 {
     public class FBApplication : Base.Baseclass
     {
-        [Test]
+        [Test,Order(1)]
         public void CheckInputFieldsForSignupPage()
         {
             SignupAction.SignupActionclass.SignupPage();
         }
-        [Test]
+        [Test,Order(2)]
         public void CheckInputFields()
         {
             DoAction.DoActions.FacebookTitle();
             DoAction.DoActions.CheckEmailAndPassword();
             ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile("Test.png", ScreenshotImageFormat.Png);
         }
-        [Test]
+        [Test,Order(3)]
         public void CheckInputFieldsForPostPage()
         {
             PostAction.CreatePostAction.CheckEmailAndPassword();
         }
-
     }
 }

@@ -48,7 +48,7 @@ namespace AutomateFacebookApp.PostAction
                 //upload a photo
                 post.addPhoto.Click();
                 System.Threading.Thread.Sleep(8000);
-                post.addPhoto.SendKeys("C:\\Users\\sona.g\\Pictures\\Screenshots\\Screenshot(1).png");
+                post.addPhoto.SendKeys(@"C:\Users\sona.g\Pictures\Screenshots\Screenshot(1).png");
                 System.Threading.Thread.Sleep(8000);
             }
             catch(Exception ex)
