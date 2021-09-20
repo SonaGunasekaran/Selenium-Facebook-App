@@ -3,28 +3,30 @@
  * Author:Sona G
  * Date :08/09/2021
  */
+using AutomateFacebookApp.ExtendReport;
+using AventStack.ExtentReports;
 using NUnit.Framework;
-using OpenQA.Selenium;
 
 namespace AutomateFacebookApp
 {
     public class FBApplication : Base.Baseclass
     {
-        [Test,Order(1)]
+        [Test, Order(1)]
         public void CheckInputFieldsForSignupPage()
         {
             SignupAction.SignupActionclass.SignupPage();
         }
-        [Test,Order(2)]
+
+        [Test, Order(2)]
         public void CheckInputFields()
         {
             DoAction.DoActions.FacebookTitle();
             DoAction.DoActions.CheckEmailAndPassword();
-            ((ITakesScreenshot)driver).GetScreenshot().SaveAsFile("Test.png", ScreenshotImageFormat.Png);
         }
-        [Test,Order(3)]
+
+        [Test, Order(3)]
         public void CheckInputFieldsForPostPage()
-        {
+        { 
             PostAction.CreatePostAction.CheckEmailAndPassword();
         }
     }

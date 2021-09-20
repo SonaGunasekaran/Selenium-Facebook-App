@@ -3,6 +3,7 @@
  * Author:Sona G
  * Date :08/09/2021
  */
+using AutoItX3Lib;
 using AutomateFacebookApp.CreatePost;
 using System;
 
@@ -43,13 +44,21 @@ namespace AutomateFacebookApp.PostAction
 
                 //click photo icon
                 post.uploadPhoto.Click();
-                System.Threading.Thread.Sleep(8000);
+                System.Threading.Thread.Sleep(4000);
 
                 //upload a photo
                 post.addPhoto.Click();
-                System.Threading.Thread.Sleep(8000);
-                post.addPhoto.SendKeys(@"C:\Users\sona.g\Pictures\Screenshots\Screenshot(1).png");
-                System.Threading.Thread.Sleep(8000);
+                System.Threading.Thread.Sleep(4000);
+
+                //AutoIt- Handle Windows that do not belong to Browser
+                AutoItX3 autoIt = new AutoItX3();
+                //Activate so that next set of Action happen on this window
+                autoIt.WinActivate("Open");
+                //Upload an image
+                autoIt.Send(@"C:\Users\sona.g\Desktop\download.jpg");
+                System.Threading.Thread.Sleep(2000);
+                autoIt.Send("{Enter}");
+                System.Threading.Thread.Sleep(4000);
             }
             catch(Exception ex)
             {
