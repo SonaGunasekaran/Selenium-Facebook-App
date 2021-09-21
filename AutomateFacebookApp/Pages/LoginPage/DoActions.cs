@@ -3,11 +3,10 @@
  * Author:Sona G
  * Date :08/09/2021
  */
-using AutomateFacebookApp.LoginPage;
 using NUnit.Framework;
 using System;
 
-namespace AutomateFacebookApp.DoAction
+namespace AutomateFacebookApp.Pages.LoginPage
 {
     public class DoActions : Base.Baseclass
     {
@@ -35,6 +34,8 @@ namespace AutomateFacebookApp.DoAction
                 //click on loginbutton
                 login.loginbtn.Click();
                 System.Threading.Thread.Sleep(4000);
+
+                Assert.AreEqual(driver.Url, "https://www.facebook.com/?sk=welcome");
             }
             catch(Exception ex)
             {

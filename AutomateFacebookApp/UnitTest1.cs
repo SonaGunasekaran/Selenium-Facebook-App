@@ -14,20 +14,20 @@ namespace AutomateFacebookApp
         [Test, Order(1)]
         public void CheckInputFieldsForSignupPage()
         {
-            SignupAction.SignupActionclass.SignupPage();
+            Pages.SignupPage.SignupActionclass.SignupPage();
         }
 
         [Test, Order(2)]
         public void CheckInputFields()
         {
-            DoAction.DoActions.FacebookTitle();
-            DoAction.DoActions.CheckEmailAndPassword();
+            Pages.LoginPage.DoActions.FacebookTitle();
+            Pages.LoginPage.DoActions.CheckEmailAndPassword();
         }
 
         [Test, Order(3)]
         public void CheckInputFieldsForPostPage()
-        { 
-            PostAction.CreatePostAction.CheckEmailAndPassword();
+        {
+            Pages.CreatePostPage.CreatePostAction.CheckEmailAndPassword();
         }
     }
 }

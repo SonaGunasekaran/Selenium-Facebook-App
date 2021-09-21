@@ -3,11 +3,12 @@
  * Author:Sona G
  * Date :08/09/2021
  */
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
 
-namespace AutomateFacebookApp.SignupAction
+namespace AutomateFacebookApp.Pages.SignupPage
 {
     public class SignupActionclass : Base.Baseclass
     {
@@ -15,7 +16,6 @@ namespace AutomateFacebookApp.SignupAction
         {
             try
             {
-                
                 IWebElement createacc = driver.FindElement(By.XPath("//*[@class='_6ltg'][2]"));
                 createacc.Click();
                 System.Threading.Thread.Sleep(2000);
@@ -65,6 +65,8 @@ namespace AutomateFacebookApp.SignupAction
                 //Find register button using name 
                 driver.FindElement(By.Name("websubmit")).Click();
                 System.Threading.Thread.Sleep(1000);
+                
+                Assert.AreNotEqual(driver.Url, "https://www.facebook.com/?sk=welcome");
             }
             catch(Exception ex)
             {
