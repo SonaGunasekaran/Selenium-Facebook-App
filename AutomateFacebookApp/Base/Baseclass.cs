@@ -3,7 +3,6 @@
  * Author:Sona G
  * Date :08/09/2021
 */
-using AutomateFacebookApp.DoAction;
 using AutomateFacebookApp.ExtendReport;
 using AventStack.ExtentReports;
 using log4net;
@@ -34,12 +33,17 @@ namespace AutomateFacebookApp.Base
 
             test = reports.CreateTest("Tests");
             test.Log(Status.Info, "Automation FaceBook");
-            //Launching chrome browser
-            logger.Info("Launching browser");
-            driver = new ChromeDriver();
+            
+            //Disble notifications
+            ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--disable-notifications");
+            driver = new ChromeDriver(options);
+
             //Get the facebook URL
             driver.Url = "https://www.facebook.com/";
+
             
+
             logger.Info("Exit");
         }
         [TearDown]

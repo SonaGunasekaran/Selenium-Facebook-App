@@ -6,7 +6,7 @@
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace AutomateFacebookApp.LoginPage
+namespace AutomateFacebookApp.Pages.LoginPage
 {
     public class FBLoginPage
     {

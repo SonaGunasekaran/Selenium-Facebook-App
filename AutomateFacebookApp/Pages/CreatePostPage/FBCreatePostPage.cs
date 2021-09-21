@@ -6,7 +6,7 @@
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace AutomateFacebookApp.CreatePost
+namespace AutomateFacebookApp.Pages.CreatePostPage
 {
     public class FBCreatePostPage
     {

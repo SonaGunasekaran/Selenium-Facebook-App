@@ -4,10 +4,9 @@
  * Date :08/09/2021
  */
 using AutoItX3Lib;
-using AutomateFacebookApp.CreatePost;
 using System;
 
-namespace AutomateFacebookApp.PostAction
+namespace AutomateFacebookApp.Pages.CreatePostPage
 {
     public class CreatePostAction : Base.Baseclass
     {
