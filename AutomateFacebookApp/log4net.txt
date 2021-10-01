@@ -495,3 +495,191 @@
 2021-09-21 14:53:52,828 INFO Field not found
 2021-09-21 14:53:52,931 INFO Field not found
 2021-09-21 14:54:13,735 INFO Field not found
+2021-09-21 16:13:09,654 INFO Exit
+2021-09-21 16:13:11,887 ERROR Field not found
+2021-09-21 16:13:12,994 ERROR Field not found
+2021-09-21 16:13:14,193 ERROR Field not found
+2021-09-21 16:13:15,355 INFO Field not found
+2021-09-21 16:13:16,494 ERROR Field not found
+2021-09-21 16:13:17,649 INFO Field not found
+2021-09-21 16:13:18,778 INFO Field not found
+2021-09-21 16:13:19,819 ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='a-icon-alt'][1]"}
+  (Session info: chrome=93.0.4577.82)
+2021-09-21 16:13:29,230 INFO Exit
+2021-09-21 16:13:33,187 INFO Exit
+2021-09-21 16:13:33,350 INFO Field not found
+2021-09-21 16:13:33,475 INFO Field not found
+2021-09-21 16:13:54,599 INFO Field not found
+2021-09-30 14:48:12,100 INFO Exit
+2021-09-30 14:48:23,257 INFO Exit
+2021-09-30 14:48:23,564 ERROR Field not found
+2021-09-30 14:48:23,684 ERROR Field not found
+2021-09-30 14:48:31,154 ERROR Facebook
+2021-09-30 14:48:35,433 ERROR Could not find element by: By.XPath: //*[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5 r8blr3vg']
+2021-09-30 14:51:12,827 INFO Exit
+2021-09-30 14:51:23,937 INFO Exit
+2021-09-30 14:51:24,084 ERROR Field not found
+2021-09-30 14:51:24,207 ERROR Field not found
+2021-09-30 14:51:32,623 ERROR Facebook
+2021-09-30 14:51:36,913 ERROR Could not find element by: By.XPath: //*[@id='jsc_c_5o']/span
+2021-09-30 14:52:43,587 INFO Exit
+2021-09-30 14:52:55,159 INFO Exit
+2021-09-30 14:52:55,333 ERROR Field not found
+2021-09-30 14:52:55,468 ERROR Field not found
+2021-09-30 14:53:03,198 ERROR Facebook
+2021-09-30 14:53:11,652 ERROR Could not find element by: By.XPath: //*[@id='jsc_c_5o']/span
+2021-09-30 14:54:45,412 INFO Exit
+2021-09-30 14:54:57,249 INFO Exit
+2021-09-30 14:54:57,392 ERROR Field not found
+2021-09-30 14:54:57,528 ERROR Field not found
+2021-09-30 14:55:05,203 ERROR Facebook
+2021-09-30 14:55:13,732 ERROR Could not find element by: By.XPath: //*[@id='jsc_c_5o']/span
+2021-09-30 14:56:41,373 INFO Exit
+2021-09-30 14:56:52,172 INFO Exit
+2021-09-30 14:56:52,320 ERROR Field not found
+2021-09-30 14:56:52,449 ERROR Field not found
+2021-09-30 14:57:00,465 ERROR Facebook
+2021-09-30 14:57:13,415 INFO Field not found
+2021-09-30 14:57:29,997 ERROR Could not find element by: By.XPath:   //*[@id='jsc_c_42']/div/div/span/div/div
+2021-09-30 14:59:25,005 INFO Exit
+2021-09-30 14:59:36,957 INFO Exit
+2021-09-30 14:59:37,096 ERROR Field not found
+2021-09-30 14:59:37,232 ERROR Field not found
+2021-09-30 14:59:45,007 ERROR Facebook
+2021-09-30 14:59:57,993 INFO Field not found
+2021-09-30 15:00:14,464 ERROR Could not find element by: By.XPath:   //*[@id='jsc_c_42']/div/div/span/div/div
+2021-09-30 15:00:53,393 INFO Exit
+2021-09-30 15:01:03,964 INFO Exit
+2021-09-30 15:01:04,112 ERROR Field not found
+2021-09-30 15:01:04,248 ERROR Field not found
+2021-09-30 15:01:11,831 ERROR Facebook
+2021-09-30 15:01:24,853 INFO Field not found
+2021-09-30 15:01:49,019 ERROR Could not find element by: By.XPath:   //*[@id='jsc_c_42']/div/div/span/div/div
+2021-09-30 15:04:25,198 INFO Exit
+2021-09-30 15:04:34,420 INFO Exit
+2021-09-30 15:04:34,559 ERROR Field not found
+2021-09-30 15:04:34,679 ERROR Field not found
+2021-09-30 15:04:42,783 ERROR Facebook
+2021-09-30 15:04:55,647 INFO Field not found
+2021-09-30 15:59:53,389 INFO Exit
+2021-09-30 16:00:04,480 INFO Exit
+2021-09-30 16:01:08,379 INFO Exit
+2021-09-30 16:01:18,165 INFO Exit
+2021-09-30 16:15:57,528 INFO Exit
+2021-09-30 16:16:02,066 ERROR Field not found
+2021-09-30 16:16:02,201 ERROR Field not found
+2021-09-30 16:16:08,368 ERROR Facebook
+2021-09-30 16:16:18,773 INFO Exit
+2021-09-30 16:16:37,741 ERROR Field not found
+2021-09-30 16:16:41,940 ERROR Field not found
+2021-09-30 16:16:58,706 ERROR Facebook
+2021-09-30 16:22:47,066 INFO Exit
+2021-09-30 16:22:47,887 ERROR Field not found
+2021-09-30 16:22:48,003 ERROR Field not found
+2021-09-30 16:22:54,802 ERROR Facebook
+2021-09-30 16:23:07,613 INFO Field not found
+2021-09-30 16:27:10,996 INFO Exit
+2021-09-30 16:27:11,875 ERROR Field not found
+2021-09-30 16:27:11,988 ERROR Field not found
+2021-09-30 16:27:19,634 ERROR Facebook
+2021-09-30 16:27:32,748 INFO Field not found
+2021-09-30 17:34:22,063 INFO Exit
+2021-09-30 17:34:23,175 ERROR Field not found
+2021-09-30 17:34:23,337 ERROR Field not found
+2021-09-30 17:34:31,723 ERROR Facebook
+2021-09-30 17:34:44,944 INFO Field not found
+2021-10-01 12:33:10,633 INFO Exit
+2021-10-01 12:33:10,862 ERROR Field not found
+2021-10-01 12:33:11,041 ERROR Field not found
+2021-10-01 12:33:24,419 INFO Exit
+2021-10-01 12:33:24,866 ERROR 
+2021-10-01 12:33:28,774 ERROR Field not found
+2021-10-01 12:33:32,898 ERROR Field not found
+2021-10-01 12:33:35,665 ERROR Tried to run command without establishing a connection
+2021-10-01 12:41:00,509 INFO Exit
+2021-10-01 12:41:00,657 ERROR Field not found
+2021-10-01 12:41:00,784 ERROR Field not found
+2021-10-01 12:41:14,722 INFO Exit
+2021-10-01 12:41:14,824 ERROR 
+2021-10-01 12:41:18,873 ERROR Field not found
+2021-10-01 12:41:23,072 ERROR Field not found
+2021-10-01 12:41:25,494 ERROR Tried to run command without establishing a connection
+2021-10-01 12:45:36,773 INFO Exit
+2021-10-01 12:45:36,913 ERROR Field not found
+2021-10-01 12:45:37,032 ERROR Field not found
+2021-10-01 12:45:41,271 ERROR Facebook
+2021-10-01 12:45:51,495 INFO Exit
+2021-10-01 12:45:58,157 ERROR Exception has been thrown by the target of an invocation.
+2021-10-01 12:46:38,276 INFO Exit
+2021-10-01 12:46:38,416 ERROR Field not found
+2021-10-01 12:46:38,526 ERROR Field not found
+2021-10-01 12:46:42,721 ERROR Facebook
+2021-10-01 12:46:51,964 INFO Exit
+2021-10-01 12:46:58,434 ERROR Exception has been thrown by the target of an invocation.
+2021-10-01 12:51:05,881 INFO Exit
+2021-10-01 12:51:06,103 ERROR Field not found
+2021-10-01 12:51:06,259 ERROR Field not found
+2021-10-01 12:51:19,430 INFO Exit
+2021-10-01 12:51:19,532 ERROR 
+2021-10-01 12:51:23,605 ERROR Field not found
+2021-10-01 12:51:27,762 ERROR Field not found
+2021-10-01 12:51:30,217 ERROR Tried to run command without establishing a connection
+2021-10-01 12:53:19,074 INFO Exit
+2021-10-01 12:53:19,220 ERROR Field not found
+2021-10-01 12:53:19,344 ERROR Field not found
+2021-10-01 12:53:33,637 INFO Exit
+2021-10-01 12:53:33,722 ERROR 
+2021-10-01 12:53:37,771 ERROR Field not found
+2021-10-01 12:53:41,899 ERROR Field not found
+2021-10-01 12:53:44,202 ERROR Tried to run command without establishing a connection
+2021-10-01 12:54:42,455 INFO Exit
+2021-10-01 12:54:42,592 ERROR Field not found
+2021-10-01 12:54:42,702 ERROR Field not found
+2021-10-01 12:54:56,127 INFO Exit
+2021-10-01 12:54:56,256 ERROR 
+2021-10-01 12:55:00,312 ERROR Field not found
+2021-10-01 12:55:04,471 ERROR Field not found
+2021-10-01 12:55:06,639 ERROR Tried to run command without establishing a connection
+2021-10-01 12:57:37,512 INFO Exit
+2021-10-01 12:57:37,657 ERROR Field not found
+2021-10-01 12:57:37,769 ERROR Field not found
+2021-10-01 12:57:50,054 INFO Exit
+2021-10-01 12:57:50,165 ERROR 
+2021-10-01 12:57:54,230 ERROR Field not found
+2021-10-01 12:57:58,394 ERROR Field not found
+2021-10-01 12:58:00,611 ERROR Tried to run command without establishing a connection
+2021-10-01 13:01:11,858 INFO Exit
+2021-10-01 13:01:11,991 ERROR Field not found
+2021-10-01 13:01:12,108 ERROR Field not found
+2021-10-01 13:01:24,792 INFO Exit
+2021-10-01 13:01:24,886 ERROR 
+2021-10-01 13:01:26,932 ERROR Could not find element by: By.XPath: /html/body/div[1]/div/div[1]/div/div[2]/div[3]/div/div[1]/div[1]/ul/li[1]/span/div
+2021-10-01 13:01:28,963 ERROR Field not found
+2021-10-01 13:01:33,074 ERROR Field not found
+2021-10-01 13:01:39,308 ERROR Exception has been thrown by the target of an invocation.
+2021-10-01 13:01:43,402 ERROR A exception with a null response was thrown sending an HTTP request to the remote WebDriver server for URL http://localhost:56109/session//element. The status of the exception was UnknownError, and the message was: No connection could be made because the target machine actively refused it. No connection could be made because the target machine actively refused it.
+2021-10-01 13:06:57,440 INFO Exit
+2021-10-01 13:06:57,600 ERROR Field not found
+2021-10-01 13:06:57,738 ERROR Field not found
+2021-10-01 13:07:04,651 ERROR Facebook
+2021-10-01 13:07:08,930 ERROR Could not find element by: By.XPath: /html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div
+2021-10-01 13:09:36,029 INFO Exit
+2021-10-01 13:09:36,189 ERROR Field not found
+2021-10-01 13:09:36,323 ERROR Field not found
+2021-10-01 13:09:42,712 ERROR Facebook
+2021-10-01 13:09:47,071 ERROR Could not find element by: By.XPath: /html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div
+2021-10-01 13:12:47,819 INFO Exit
+2021-10-01 13:12:47,978 ERROR Field not found
+2021-10-01 13:12:48,088 ERROR Field not found
+2021-10-01 13:12:54,882 ERROR Facebook
+2021-10-01 13:12:59,112 ERROR Could not find element by: By.XPath: /html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div[1]/div
+2021-10-01 13:15:24,829 INFO Exit
+2021-10-01 13:15:24,991 ERROR Field not found
+2021-10-01 13:15:25,118 ERROR Field not found
+2021-10-01 13:15:31,739 ERROR Facebook
+2021-10-01 13:15:44,587 INFO Field not found
+2021-10-01 13:22:38,305 INFO Exit
+2021-10-01 13:22:38,488 ERROR Field not found
+2021-10-01 13:22:38,604 ERROR Field not found
+2021-10-01 13:22:46,876 ERROR Facebook
+2021-10-01 13:22:59,818 INFO Field not found

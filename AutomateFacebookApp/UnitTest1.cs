@@ -4,7 +4,6 @@
  * Date :08/09/2021
  */
 using AutomateFacebookApp.ExtendReport;
-using AventStack.ExtentReports;
 using NUnit.Framework;
 
 namespace AutomateFacebookApp
@@ -24,10 +23,17 @@ namespace AutomateFacebookApp
             Pages.LoginPage.DoActions.CheckEmailAndPassword();
         }
 
+
         [Test, Order(3)]
         public void CheckInputFieldsForPostPage()
         {
             Pages.CreatePostPage.CreatePostAction.CheckEmailAndPassword();
+        }
+
+        [Test]
+        public void TestMethodForEmailSending()
+        {
+            Email.UserData();
         }
     }
 }

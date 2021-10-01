@@ -37,7 +37,7 @@ namespace AutomateFacebookApp.Pages.SignupPage
 
                 //Find password using name  and enter values
                 driver.FindElement(By.Name("reg_passwd__")).SendKeys("Sjfk4566");
-                logger.Info("Field not found");
+                logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find birthday date using name and enter values
@@ -46,29 +46,30 @@ namespace AutomateFacebookApp.Pages.SignupPage
                 logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
-                //Find birthday month using Id and enter values
+               //Find birthday month using Id and enter values
                 SelectElement bMonth = new SelectElement(driver.FindElement(By.Id("month")));
                 bMonth.SelectByValue("7");
-                logger.Info("Field not found");
+                logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find birthday year using Id and enter values
                 SelectElement bYear = new SelectElement(driver.FindElement(By.Id("year")));
                 bYear.SelectByValue("2000");
-                logger.Info("Field not found");
+                logger.Error("Field not found");
                 System.Threading.Thread.Sleep(1000);
 
                 //Find gender using Xpath
-                driver.FindElement(By.XPath("//*[@class='mtm _5wa2 _5dbb'][1]")).Click();
+                driver.FindElement(By.XPath("//*[@class='dwxx2s2f dicw6rsg kady6ibp rs0gx3tq'][1]")).Click();
                 System.Threading.Thread.Sleep(1000);
+                Takescreenshot();
 
                 //Find register button using name 
                 driver.FindElement(By.Name("websubmit")).Click();
                 System.Threading.Thread.Sleep(1000);
-                
+
                 Assert.AreNotEqual(driver.Url, "https://www.facebook.com/?sk=welcome");
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 logger.Error(ex.Message);
             }
