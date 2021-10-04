@@ -73,7 +73,14 @@ namespace AutomateFacebookApp.DoAction
                 Assert.AreEqual(actual, expected);
 
                 //Validating whether the image is displayed
-                Assert.IsTrue(post.img.Displayed);
+                if(post.img.Displayed)
+                {
+                    Console.WriteLine("Image posted successfully");
+                }
+                else
+                {
+                    Console.WriteLine("Failed to post image");
+                }
 
                 //Click on dropdown
                 post.arrowIcon.Click();
@@ -83,7 +90,14 @@ namespace AutomateFacebookApp.DoAction
                 post.SignOut.Click();
                 System.Threading.Thread.Sleep(4000);
 
-                Assert.IsTrue(post.loginDisplay.Displayed);
+                if(post.loginDisplay.Displayed)
+                {
+                    Console.WriteLine("Logged out successfully");
+                }
+                else
+                {
+                    Console.WriteLine("Logout failed");
+                }
             }
             catch (Exception ex)
             {
