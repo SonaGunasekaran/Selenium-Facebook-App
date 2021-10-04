@@ -4,11 +4,12 @@
  * Date :08/09/2021
  */
 using AutoItX3Lib;
-using AutomateFacebookApp.Pages.LoginPage;
+using AutomateFacebookApp.Pages;
 using NUnit.Framework;
+using OpenQA.Selenium;
 using System;
 
-namespace AutomateFacebookApp.Pages.CreatePostPage
+namespace AutomateFacebookApp.DoAction
 {
     public class CreatePostAction : Base.Baseclass
     {
@@ -16,7 +17,8 @@ namespace AutomateFacebookApp.Pages.CreatePostPage
         {
             try
             {
-                DoActions.CheckEmailAndPassword();
+                string csvFilePath = @"C:\Users\sona.g\source\repos\AutomateFacebookApp\AutomateFacebookApp\CsvFile\FBfile.csv";
+                DoAction.DoActions.LoadUserData(csvFilePath, "Email,Password");
                 FBCreatePostPage post = new FBCreatePostPage(driver);
 
                 //Click the home icon 
@@ -27,13 +29,13 @@ namespace AutomateFacebookApp.Pages.CreatePostPage
                 post.createPost.Click();
                 System.Threading.Thread.Sleep(4000);
 
+                //Validation
                 Assert.AreEqual("Create Post", post.postText.Text);
-                
+
                 //Add some text in the text field
                 post.text.SendKeys("Something");
                 System.Threading.Thread.Sleep(4000);
                 logger.Info("Field not found");
-                Takescreenshot();
 
                 //click photo icon
                 post.uploadPhoto.Click();
@@ -60,12 +62,18 @@ namespace AutomateFacebookApp.Pages.CreatePostPage
 
                 //Click on post button
                 post.postbtn.Click();
-
                 System.Threading.Thread.Sleep(8000);
 
+                ((IJavaScriptExecutor)driver).ExecuteScript("scroll(0,1500)");
+                System.Threading.Thread.Sleep(1000);
+
+                //Validating whether the Text post is equal or not
                 string expected = "Something";
                 string actual = post.aboutPost.Text;
                 Assert.AreEqual(actual, expected);
+
+                //Validating whether the image is displayed
+                Assert.IsTrue(post.img.Displayed);
 
                 //Click on dropdown
                 post.arrowIcon.Click();

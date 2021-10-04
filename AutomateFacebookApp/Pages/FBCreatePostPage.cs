@@ -6,7 +6,7 @@
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace AutomateFacebookApp.Pages.CreatePostPage
+namespace AutomateFacebookApp.Pages
 {
     public class FBCreatePostPage
     {
@@ -46,6 +46,10 @@ namespace AutomateFacebookApp.Pages.CreatePostPage
         [FindsBy(How = How.XPath, Using = "  //*[@class='kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q']")]
         [CacheLookup]
         public IWebElement aboutPost;
+
+        [FindsBy(How = How.XPath, Using = "  //*[@class='i09qtzwb n7fi1qx3 datstx6m pmk7jnqg j9ispegn kr520xx4 k4urcfbm bixrwtb6']")]
+        [CacheLookup]
+        public IWebElement img;
 
         [FindsBy(How = How.XPath, Using = "//*[@class='j83agx80 l9j0dhe7']")]
         [CacheLookup]
