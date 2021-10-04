@@ -683,3 +683,136 @@
 2021-10-01 13:22:38,604 ERROR Field not found
 2021-10-01 13:22:46,876 ERROR Facebook
 2021-10-01 13:22:59,818 INFO Field not found
+2021-10-01 16:25:24,544 INFO Exit
+2021-10-01 16:25:24,750 ERROR Field not found
+2021-10-01 16:25:24,940 ERROR Field not found
+2021-10-01 16:25:32,319 ERROR Facebook
+2021-10-01 16:25:45,580 INFO Field not found
+2021-10-01 16:26:10,132 ERROR Could not find element by: By.XPath:   //*[@class='kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x c1et5uql ii04i59q']
+2021-10-01 16:27:22,099 INFO Exit
+2021-10-01 16:27:22,314 ERROR Field not found
+2021-10-01 16:27:22,485 ERROR Field not found
+2021-10-01 16:27:30,047 ERROR Facebook
+2021-10-01 16:27:43,204 INFO Field not found
+2021-10-02 11:26:49,193 INFO Exit
+2021-10-02 11:26:51,592 ERROR Field not found
+2021-10-02 11:26:52,796 ERROR Field not found
+2021-10-02 11:26:53,999 ERROR Field not found
+2021-10-02 11:26:55,136 ERROR Field not found
+2021-10-02 11:26:56,254 ERROR Field not found
+2021-10-02 11:26:57,373 ERROR Field not found
+2021-10-02 11:26:58,496 ERROR Field not found
+2021-10-02 11:26:59,560 ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='dwxx2s2f dicw6rsg kady6ibp rs0gx3tq'][1]"}
+  (Session info: chrome=94.0.4606.61)
+2021-10-02 11:27:10,980 INFO Exit
+2021-10-02 11:27:15,705 INFO Exit
+2021-10-02 11:27:15,957 ERROR Field not found
+2021-10-02 11:27:16,072 ERROR Field not found
+2021-10-02 11:27:23,735 ERROR Facebook
+2021-10-02 11:27:36,754 INFO Field not found
+2021-10-02 11:28:16,538 INFO Exit
+2021-10-02 11:41:18,638 INFO Exit
+2021-10-02 11:41:21,070 ERROR Field not found
+2021-10-02 11:41:22,358 ERROR Field not found
+2021-10-02 11:41:23,542 ERROR Field not found
+2021-10-02 11:41:24,671 ERROR Field not found
+2021-10-02 11:41:25,789 ERROR Field not found
+2021-10-02 11:41:26,908 ERROR Field not found
+2021-10-02 11:41:28,013 ERROR Field not found
+2021-10-02 11:41:29,057 ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='dwxx2s2f dicw6rsg kady6ibp rs0gx3tq'][1]"}
+  (Session info: chrome=94.0.4606.61)
+2021-10-02 11:41:41,247 INFO Exit
+2021-10-02 11:41:46,700 INFO Exit
+2021-10-02 11:42:08,128 INFO Field not found
+2021-10-02 11:42:48,744 INFO Exit
+2021-10-02 22:29:49,864 INFO Exit
+2021-10-02 22:29:50,044 ERROR Field not found
+2021-10-02 22:29:50,151 ERROR Field not found
+2021-10-04 10:54:17,816 INFO Exit
+2021-10-04 10:54:20,080 ERROR Compound class names not allowed. Cannot have whitespace in class name. Use CSS selectors instead.
+2021-10-04 10:55:33,143 INFO Exit
+2021-10-04 10:55:35,381 ERROR Compound class names not allowed. Cannot have whitespace in class name. Use CSS selectors instead.
+2021-10-04 11:01:03,305 INFO Exit
+2021-10-04 11:01:05,817 ERROR   Expected string length 11 but was 7. Strings differ at index 0.
+  Expected: "பதிவு செய்க"
+  But was:  "Sign Up"
+  -----------^
+
+2021-10-04 11:03:24,029 INFO Exit
+2021-10-04 11:03:26,404 ERROR Field not found
+2021-10-04 11:03:27,584 ERROR Field not found
+2021-10-04 11:03:28,850 ERROR Field not found
+2021-10-04 11:03:29,996 ERROR Field not found
+2021-10-04 11:03:31,115 ERROR Field not found
+2021-10-04 11:03:32,246 ERROR Field not found
+2021-10-04 11:03:33,366 ERROR Field not found
+2021-10-04 11:03:34,413 ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='dwxx2s2f dicw6rsg kady6ibp rs0gx3tq'][1]"}
+  (Session info: chrome=94.0.4606.61)
+2021-10-04 11:07:33,964 INFO Exit
+2021-10-04 11:07:36,371 ERROR Field not found
+2021-10-04 11:07:37,613 ERROR Field not found
+2021-10-04 11:07:38,831 ERROR Field not found
+2021-10-04 11:07:39,976 ERROR Field not found
+2021-10-04 11:07:41,099 ERROR Field not found
+2021-10-04 11:07:42,233 ERROR Field not found
+2021-10-04 11:07:43,379 ERROR Field not found
+2021-10-04 11:07:44,436 ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='dwxx2s2f dicw6rsg kady6ibp rs0gx3tq'][1]"}
+  (Session info: chrome=94.0.4606.61)
+2021-10-04 11:10:31,643 INFO Exit
+2021-10-04 11:10:34,319 ERROR Field not found
+2021-10-04 11:10:35,486 ERROR Field not found
+2021-10-04 11:10:36,695 ERROR Field not found
+2021-10-04 11:10:37,844 ERROR Field not found
+2021-10-04 11:10:38,971 ERROR Field not found
+2021-10-04 11:10:40,107 ERROR Field not found
+2021-10-04 11:10:41,226 ERROR Field not found
+2021-10-04 11:13:59,763 INFO Exit
+2021-10-04 11:14:02,208 ERROR Field not found
+2021-10-04 11:14:03,789 ERROR Field not found
+2021-10-04 11:14:04,994 ERROR Field not found
+2021-10-04 11:14:06,111 ERROR Field not found
+2021-10-04 11:14:07,241 ERROR Field not found
+2021-10-04 11:14:08,375 ERROR Field not found
+2021-10-04 11:14:09,494 ERROR Field not found
+2021-10-04 11:17:58,503 INFO Exit
+2021-10-04 11:18:00,986 ERROR Field not found
+2021-10-04 11:18:02,148 ERROR Field not found
+2021-10-04 11:18:03,480 ERROR Field not found
+2021-10-04 11:18:04,625 ERROR Field not found
+2021-10-04 11:18:05,758 ERROR Field not found
+2021-10-04 11:18:06,890 ERROR Field not found
+2021-10-04 11:18:08,019 ERROR Field not found
+2021-10-04 11:29:16,564 INFO Exit
+2021-10-04 11:29:19,203 ERROR Field not found
+2021-10-04 11:29:20,430 ERROR Field not found
+2021-10-04 11:29:21,642 ERROR Field not found
+2021-10-04 11:29:22,808 ERROR Field not found
+2021-10-04 11:29:23,948 ERROR Field not found
+2021-10-04 11:29:25,079 ERROR Field not found
+2021-10-04 11:29:26,190 ERROR Field not found
+2021-10-04 11:40:33,686 INFO Exit
+2021-10-04 11:40:35,981 ERROR Field not found
+2021-10-04 11:40:37,139 ERROR Field not found
+2021-10-04 11:40:38,335 ERROR Field not found
+2021-10-04 11:40:39,473 ERROR Field not found
+2021-10-04 11:40:40,605 ERROR Field not found
+2021-10-04 11:40:41,741 ERROR Field not found
+2021-10-04 11:40:42,852 ERROR Field not found
+2021-10-04 11:44:09,337 INFO Exit
+2021-10-04 11:44:17,385 ERROR Facebook
+2021-10-04 11:44:30,229 INFO Field not found
+2021-10-04 11:52:18,092 INFO Exit
+2021-10-04 11:52:45,756 INFO Exit
+2021-10-04 11:53:57,655 INFO Exit
+2021-10-04 12:00:38,311 INFO Exit
+2021-10-04 12:00:44,090 ERROR Field not found
+2021-10-04 12:00:45,214 ERROR Field not found
+2021-10-04 12:00:46,336 ERROR Field not found
+2021-10-04 12:00:47,446 ERROR Field not found
+2021-10-04 12:00:59,512 INFO Exit
+2021-10-04 12:01:03,538 INFO Exit
+2021-10-04 12:01:23,409 INFO Field not found
+2021-10-04 12:02:02,724 INFO Exit
+2021-10-04 12:02:02,836 ERROR Field not found
+2021-10-04 12:02:02,952 ERROR Field not found
+2021-10-04 12:02:13,065 INFO Exit
