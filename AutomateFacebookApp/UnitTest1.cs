@@ -17,21 +17,21 @@ namespace AutomateFacebookApp
         [Test, Order(1)]
         public void CheckInputFieldsForSignupPage()
         {
-            DoAction.SignupActionclass.SignupPage(signupFilePath, "FirstName,LastName,Email,Password,Bday,BMonth,BYear");
+            DoAction.DoActions.SignupPage(signupFilePath, "FirstName,LastName,Email,Password,Bday,BMonth,BYear");
         }
 
         [Test, Order(2)]
         public void CheckInputFields()
         {
             DoAction.DoActions.FacebookTitle();
-            DoAction.DoActions.LoadUserData(csvFilePath, "Email,Password");
+            DoAction.DoActions.LoginIntoFacebook(csvFilePath, "Email,Password");
         }
 
 
         [Test, Order(3)]
         public void CheckInputFieldsForPostPage()
         {
-            DoAction.CreatePostAction.CheckEmailAndPassword();
+            DoAction.DoActions.CheckForPostPage();
         }
 
 
