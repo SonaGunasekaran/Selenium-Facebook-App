@@ -39,6 +39,18 @@ namespace AutomateFacebookApp.Pages
         [CacheLookup]
         public IWebElement password;
 
+        [FindsBy(How = How.Name, Using = "birthday_day")]
+        [CacheLookup]
+        public IWebElement bday;
+
+        [FindsBy(How = How.Id, Using = "month")]
+        [CacheLookup]
+        public IWebElement bMonth;
+
+        [FindsBy(How = How.Id, Using = "year")]
+        [CacheLookup]
+        public IWebElement bYear;
+
         [FindsBy(How = How.XPath, Using = "//*[@class='mtm _5wa2 _5dbb'][1]")]
         [CacheLookup]
         public IWebElement gender;

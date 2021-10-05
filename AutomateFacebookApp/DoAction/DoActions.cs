@@ -25,9 +25,9 @@ namespace AutomateFacebookApp.DoAction
             Assert.Pass(title, ftitle);
         }
 
-        public static void SignupPage(string csvFilePath, string dataHeader)
+        public static void SignupPage(string csvFilePath1, string dataHeader)
         {
-            using (TextFieldParser csvParser = new TextFieldParser(csvFilePath))
+            using (TextFieldParser csvParser = new TextFieldParser(csvFilePath1))
             {
                 csvParser.SetDelimiters(new string[] { "," });
                 csvParser.HasFieldsEnclosedInQuotes = true;
@@ -63,24 +63,23 @@ namespace AutomateFacebookApp.DoAction
 
                         //Enter the password 
                         signup.password.SendKeys(fields[3]);
-                        logger.Error("Field not found");
                         System.Threading.Thread.Sleep(1000);
 
                         //Find birthday date using name and enter values
-                        SelectElement bDay = new SelectElement(driver.FindElement(By.Name("birthday_day")));
-                        bDay.SelectByText(fields[4]);
+                        SelectElement day = new SelectElement(signup.bday);
+                        day.SelectByText(fields[4]);
                         logger.Error("Field not found");
                         System.Threading.Thread.Sleep(1000);
 
                         //Find birthday month using Id and enter values
-                        SelectElement bMonth = new SelectElement(driver.FindElement(By.Id("month")));
-                        bMonth.SelectByValue(fields[5]);
+                        SelectElement month = new SelectElement(signup.bMonth);
+                        month.SelectByValue(fields[5]);
                         logger.Error("Field not found");
                         System.Threading.Thread.Sleep(1000);
 
                         //Find birthday year using Id and enter values
-                        SelectElement bYear = new SelectElement(driver.FindElement(By.Id("year")));
-                        bYear.SelectByValue(fields[6]);
+                        SelectElement year = new SelectElement(signup.bYear);
+                        year.SelectByValue(fields[6]);
                         logger.Error("Field not found");
                         System.Threading.Thread.Sleep(1000);
 
@@ -97,14 +96,14 @@ namespace AutomateFacebookApp.DoAction
                     }
                     catch (Exception ex)
                     {
-                        logger.Error(ex.Message);
+                        throw new CustomException(CustomException.ExceptionType.NO_SUCH_ELEMENT, "Unable to locate element");
                     }
                 }
             }
         }
-        public static void LoginIntoFacebook(string csvFilePath, string dataHeader)
+        public static void LoginIntoFacebook(string csvFilePath2, string dataHeader)
         {
-            using (TextFieldParser csvParser = new TextFieldParser(csvFilePath))
+            using (TextFieldParser csvParser = new TextFieldParser(csvFilePath2))
             {
                 csvParser.SetDelimiters(new string[] { "," });
                 csvParser.HasFieldsEnclosedInQuotes = true;
@@ -131,15 +130,13 @@ namespace AutomateFacebookApp.DoAction
                         login.loginbtn.Click();
                         Takescreenshot();
 
-                        string expected = "Rambo";
-                        //Get Facebook title
-                        string actual = login.UserName.Text;
-                        //check whether the title equal or not
-                        Assert.AreEqual(actual,expected);
+                        string logintitle = "Facebook";
+                        string logintitle1 = driver.Title;
+                        Assert.AreEqual(logintitle, logintitle1);
                     }
                     catch(Exception ex)
                     {
-                        logger.Error(ex.Message);
+                        throw new CustomException(CustomException.ExceptionType.NO_SUCH_ELEMENT, "Unable to locate element");
                     }
                 }
             }
@@ -152,6 +149,7 @@ namespace AutomateFacebookApp.DoAction
                 string csvFilePath = @"C:\Users\sona.g\source\repos\AutomateFacebookApp\AutomateFacebookApp\CsvFile\FBfile.csv";
                 LoginIntoFacebook(csvFilePath, "Email,Password");
                 FBCreatePostPage post = new FBCreatePostPage(driver);
+                System.Threading.Thread.Sleep(4000);
 
                 //Click the home icon 
                 post.homeIcon.Click();
@@ -205,14 +203,7 @@ namespace AutomateFacebookApp.DoAction
                 Assert.AreEqual(actual, expected);
 
                 //Validating whether the image is displayed
-                if (post.img.Displayed)
-                {
-                    Console.WriteLine("Image posted successfully");
-                }
-                else
-                {
-                    Console.WriteLine("Failed to post image");
-                }
+                Assert.IsTrue(post.img.Displayed);
 
                 //Click on dropdown
                 post.arrowIcon.Click();
@@ -222,18 +213,11 @@ namespace AutomateFacebookApp.DoAction
                 post.SignOut.Click();
                 System.Threading.Thread.Sleep(4000);
 
-                if (post.loginDisplay.Displayed)
-                {
-                    Console.WriteLine("Logged out successfully");
-                }
-                else
-                {
-                    Console.WriteLine("Logout failed");
-                }
+                Assert.IsTrue(post.loginDisplay.Displayed);
             }
             catch (Exception ex)
             {
-                logger.Error(ex.Message);
+                throw new CustomException(CustomException.ExceptionType.NO_SUCH_ELEMENT, "Unable to locate element");
             }
         }
     }

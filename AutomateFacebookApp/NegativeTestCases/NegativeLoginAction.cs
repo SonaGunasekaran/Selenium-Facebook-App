@@ -3,36 +3,50 @@
  * Author:Sona G
  * Date :21/09/2021
  */
+using Microsoft.VisualBasic.FileIO;
 using NUnit.Framework;
 using System;
 
 namespace AutomateFacebookApp.NegativeTestCases
 {
-    public class NegativeLoginAction:Base.Baseclass
+    public class NegativeLoginAction : Base.Baseclass
     {
-        public static void CheckEmailAndPassword()
+        public static void CheckEmailAndPassword(string csvFilePath ,string dataheader)
         {
-            try
+            using (TextFieldParser csvParser = new TextFieldParser(csvFilePath))
             {
-                NegativeLogin login = new NegativeLogin(driver);
-                //Enter the email
-                login.nemail.SendKeys("sonagunaukj@hg.com");
-                logger.Error("Field not found");
+                csvParser.SetDelimiters(new string[] { "," });
+                csvParser.HasFieldsEnclosedInQuotes = true;
 
-                //enter the password
-                login.npassword.SendKeys("hsfgjj567");
-                logger.Error("Field not found");
+                // Skip the row with the column names
+                csvParser.ReadLine();
 
-                //click on loginbutton
-                login.nloginbtn.Click();
-                Takescreenshot();
-                System.Threading.Thread.Sleep(4000);
+                while (!csvParser.EndOfData)
+                {
+                    // Read current line fields, pointer moves to the next line.
+                    string[] fields = csvParser.ReadFields();
+                    try
+                    {
+                        NegativeLogin login = new NegativeLogin(driver);
+                        //Check email by name
+                        login.nemail.SendKeys(fields[0]);
+                        System.Threading.Thread.Sleep(1000);
 
-                Assert.IsTrue(login.invalid.Displayed);
-            }
-            catch (Exception ex)
-            {
-                logger.Error(ex.Message);
+                        //check password by id
+                        login.npassword.SendKeys(fields[1]);
+                        System.Threading.Thread.Sleep(1000);
+
+                        //check login by loginbutton
+                        login.nloginbtn.Click();
+                        Takescreenshot();
+
+                        Assert.IsTrue(login.invalid.Displayed);
+                    }
+                    catch (Exception ex)
+                    {
+                        throw new CustomException(CustomException.ExceptionType.NO_SUCH_ELEMENT, "Unable to locate element");
+                    }
+                }
             }
         }
     }
