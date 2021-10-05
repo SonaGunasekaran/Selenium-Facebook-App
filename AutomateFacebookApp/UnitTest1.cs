@@ -13,7 +13,7 @@ namespace AutomateFacebookApp
         string csvFilePath = @"C:\Users\sona.g\source\repos\AutomateFacebookApp\AutomateFacebookApp\CsvFile\FBfile.csv";
         string signupFilePath = @"C:\Users\sona.g\source\repos\AutomateFacebookApp\AutomateFacebookApp\CsvFile\SignupFile.csv";
         string emailCsvPath = @"C:\Users\sona.g\source\repos\AutomateFacebookApp\AutomateFacebookApp\CsvFile\Emailfile.csv";
-
+        string negativeLoginPath = @"C:\Users\sona.g\source\repos\AutomateFacebookApp\AutomateFacebookApp\CsvFile\NegativeLogin.csv";
         [Test, Order(1)]
         public void CheckInputFieldsForSignupPage()
         {
@@ -35,10 +35,11 @@ namespace AutomateFacebookApp
         }
 
 
-        [Test, Order(34)]
+
+        [Test, Order(4)]
         public void NegativeTestForLoginPage()
         {
-            NegativeTestCases.NegativeLoginAction.CheckEmailAndPassword();
+            NegativeTestCases.NegativeLoginAction.CheckEmailAndPassword(negativeLoginPath, "Email,Password");
         }
 
         [Test]

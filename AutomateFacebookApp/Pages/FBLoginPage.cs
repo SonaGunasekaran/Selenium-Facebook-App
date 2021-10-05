@@ -26,9 +26,5 @@ namespace AutomateFacebookApp.Pages
         [FindsBy(How = How.Name, Using = "login")]
         [CacheLookup]
         public IWebElement loginbtn;
-
-        [FindsBy(How = How.XPath, Using = "//*[@class='a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 ltmttdrg g0qnabr5']")]
-        [CacheLookup]
-        public IWebElement UserName;
     }
 }
